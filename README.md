@@ -1,27 +1,40 @@
-**How to Use the Script**
-Download and Save the Script: Save the script as install_osint_tools.sh.
+# OSINT & Reconnaissance Tools Installer
 
-**Make the Script Executable:**
-chmod +x install_osint_tools.sh
-**Run the Script:**
-sudo ./install_osint_tools.sh
+A comprehensive Bash script to automate the installation of OSINT (Open Source Intelligence) and reconnaissance tools. These tools are essential for security analysts, penetration testers, and cybersecurity enthusiasts to gather intelligence and perform reconnaissance tasks.
 
-**Notes for Each Tool**
-Tool	Installation Notes/Links
-Maltego	Requires separate manual installation from official website.
-theHarvester	Installs via Python dependencies.
-creepy	Installs via Python dependencies.
-metagoofil	Metadata harvester available on GitHub.
-GoogleHackingDatabase	Uses the SecLists repository for Google Dorks.
-Censys	Python library installation from the official repository.
-Shodan	Python library installation from the official repository.
-recon-ng	Comprehensive Python-based reconnaissance framework.
-github-dorks	CLI tool to scan GitHub repositories for sensitive data leaks.
-vcsmap	Scans version control systems for sensitive information.
-Spiderfoot	Multi-source OSINT tool with web UI and visualization.
+---
 
-**Additional Information**
-Directory: All tools are installed into /opt/osint-tools. Navigate there to use the tools.
-Dependencies: The script installs dependencies for most tools. For tool-specific instructions, refer to their respective repositories.
-Maltego: Due to its proprietary nature, Maltego requires manual installation.
-Let me know if you need further refinements!
+## Features
+
+- **Automated Installation:** Downloads and installs tools with their dependencies.
+- **Directory Management:** Tools are installed into `/opt/osint-tools`.
+- **Supported Tools:**
+  - **[Maltego](https://www.maltego.com/):** Proprietary tool for OSINT and forensics.
+  - **[theHarvester](https://github.com/laramies/theHarvester):** Email, subdomain, and people names harvester.
+  - **[creepy](https://github.com/ilektrojohn/creepy):** Geolocation OSINT tool.
+  - **[metagoofil](https://github.com/opsdisk/metagoofil):** Metadata harvester.
+  - **[Google Hacking Database](https://github.com/danielmiessler/SecLists):** Database of Google dorks for reconnaissance.
+  - **[Censys](https://github.com/censys/censys-python):** Internet host and website scanner.
+  - **[Shodan](https://github.com/achillean/shodan-python):** Internet-connected devices search engine.
+  - **[recon-ng](https://github.com/lanmaster53/recon-ng):** Web reconnaissance framework.
+  - **[github-dorks](https://github.com/obheda12/GitDorker):** Scan GitHub for sensitive data.
+  - **[vcsmap](https://github.com/melvinsh/vcsmap):** Scans public VCS for sensitive information.
+  - **[Spiderfoot](https://github.com/smicallef/spiderfoot):** Multi-source OSINT automation tool.
+
+---
+
+## Prerequisites
+
+- **Operating System:** Linux (Debian-based, e.g., Ubuntu).
+- **Root Privileges:** Required to install system dependencies and manage directories.
+- **Internet Connection:** Required for downloading tools and dependencies.
+
+---
+
+## Installation Steps
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/your-username/osint-tools-installer.git
+   cd osint-tools-installer
